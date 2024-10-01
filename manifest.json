@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Google Lens Search",
+  "version": "1.0",
+  "description": "Search images with Google Lens using the context menu.",
+  "permissions": [
+    "contextMenus",
+    "*://*/*"   // This requests access to all URLs
+  ],
+  "icons": {
+    "48": "icons/icon.webp"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
